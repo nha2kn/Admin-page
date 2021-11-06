@@ -492,7 +492,7 @@
                 <div class="card-body">
                     <div class="header-table">
                         <h4 class="card-title">Thêm sản phẩm</h4>
-                        <button href="./category-add.php" class="btn-add" onclick="window.location.href='./categories-manager.php'">Thêm</button>
+                        <button href="./category-add.php" class="btn-add" onclick="window.location.href='./posts-manager.php'">Thêm</button>
                     </div>
                   <div class="table-responsive">
                     <table class="table">

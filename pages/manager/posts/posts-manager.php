@@ -493,7 +493,7 @@
                 <div class="card-body">
                     <div class="header-table">
                         <h4 class="card-title">Quản lý bài viết</h4>
-                        <button href="./category-add.php" class="btn-add" onclick="window.location.href='./category-add.php'">Thêm bài viết</button>
+                        <button href="./category-add.php" class="btn-add" onclick="window.location.href='./post-add.php'">Thêm bài viết</button>
                     </div>
                   <div class="table-responsive">
                     <table class="table table-striped">
