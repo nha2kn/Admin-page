@@ -7,24 +7,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Star Admin2 </title>
   <!-- plugins:css -->
-  <link rel="stylesheet" href="../../vendors/feather/feather.css">
-  <link rel="stylesheet" href="../../vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="../../vendors/ti-icons/css/themify-icons.css">
-  <link rel="stylesheet" href="../../vendors/typicons/typicons.css">
-  <link rel="stylesheet" href="../../vendors/simple-line-icons/css/simple-line-icons.css">
-  <link rel="stylesheet" href="../../vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../../vendors/feather/feather.css">
+  <link rel="stylesheet" href="../../../vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../../vendors/ti-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="../../../vendors/typicons/typicons.css">
+  <link rel="stylesheet" href="../../../vendors/simple-line-icons/css/simple-line-icons.css">
+  <link rel="stylesheet" href="../../../vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
   <!-- End plugin css for this page -->
   <!-- inject:css -->
-  <link rel="stylesheet" href="../../css/vertical-layout-light/style.css">
+  <link rel="stylesheet" href="../../../css/vertical-layout-light/style.css">
   <!-- endinject -->
-  <link rel="shortcut icon" href="../../images/favicon.png" />
+  <link rel="shortcut icon" href="../../../images/favicon.png" />
+  <link rel="stylesheet" href="../styles/manager-style.css">
 </head>
 
 <body>
   <div class="container-scroller">
-    <!-- partial:../../partials/_navbar.html -->
+    <!-- partial:../../partials/_navbar.php -->
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
         <div class="me-3">
@@ -33,11 +34,11 @@
           </button>
         </div>
         <div>
-          <a class="navbar-brand brand-logo" href="../../index.html">
-            <img src="../../images/logo.svg" alt="logo" />
+          <a class="navbar-brand brand-logo" href="../../../index.php">
+            <img src="../../../images/logo.svg" alt="logo" />
           </a>
-          <a class="navbar-brand brand-logo-mini" href="../../index.html">
-            <img src="../../images/logo-mini.svg" alt="logo" />
+          <a class="navbar-brand brand-logo-mini" href="../../../index.php">
+            <img src="../../../images/logo-mini.svg" alt="logo" />
           </a>
         </div>
       </div>
@@ -198,7 +199,7 @@
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:../../partials/_settings-panel.html -->
+      <!-- partial:../../partials/_settings-panel.php -->
       <div class="theme-setting-wrapper">
         <div id="settings-trigger"><i class="ti-settings"></i></div>
         <div id="theme-settings" class="settings-panel">
@@ -368,11 +369,11 @@
         </div>
       </div>
       <!-- partial -->
-      <!-- partial:../../partials/_sidebar.html -->
+      <!-- partial:../../partials/_sidebar.php -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="../../index.html">
+            <a class="nav-link" href="../../../index.php">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
@@ -386,9 +387,9 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Typography</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.php">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/dropdowns.php">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.php">Typography</a></li>
               </ul>
             </div>
           </li>
@@ -401,7 +402,7 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.html">Basic Elements</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../pages/forms/basic_elements.php">Basic Elements</a></li>
               </ul>
             </div>
           </li>
@@ -413,7 +414,7 @@
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/charts/chartjs.html">ChartJs</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/charts/chartjs.php">ChartJs</a></li>
               </ul>
             </div>
           </li>
@@ -425,7 +426,7 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/basic-table.html">Basic table</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/tables/basic-table.php">Basic table</a></li>
               </ul>
             </div>
           </li>
@@ -437,7 +438,7 @@
             </a>
             <div class="collapse" id="icons">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/icons/mdi.html">Mdi icons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/icons/mdi.php">Mdi icons</a></li>
               </ul>
             </div>
           </li>
@@ -450,15 +451,34 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/samples/login.php"> Login </a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item nav-category">help</li>
           <li class="nav-item">
-            <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html">
+            <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.php">
               <i class="menu-icon mdi mdi-file-document"></i>
               <span class="menu-title">Documentation</span>
+            </a>
+          </li>
+          <li class="nav-item nav-category">Quản lý</li>
+          <li class="nav-item">
+            <a class="nav-link" href="./categories-manager.php">
+              <i class="menu-icon mdi mdi-file-document"></i>
+              <span class="menu-title">Quản lý danh mục</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../posts/posts-manager.php">
+              <i class="menu-icon mdi mdi-file-document"></i>
+              <span class="menu-title">Quản lý bài viết</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../products/products-manager.php">
+              <i class="menu-icon mdi mdi-file-document"></i>
+              <span class="menu-title">Quản lý sản phẩm</span>
             </a>
           </li>
         </ul>
@@ -467,459 +487,63 @@
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="row">
-            <div class="col-md-6 grid-margin stretch-card">
+          <div class="col-lg-8 grid-margin stretch-card ml-32">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Headings</h4>
-                  <p class="card-description">
-                    Add tags <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> or class <code>.h1</code> to <code>.h6</code>
-                  </p>
-                  <div class="template-demo">
-                    <h1>h1. Heading</h1>
-                    <h2>h2. Heading</h2>
-                    <h3>h3. Heading</h3>
-                    <h4>h4. Heading</h4>
-                    <h5>h5. Heading</h5>
-                    <h6>h6. Heading</h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Headings with secondary text</h4>
-                  <p class="card-description">
-                    Add faded secondary text to headings
-                  </p>
-                  <div class="template-demo">
-                    <h1>
-                      h1. Heading
-                      <small class="text-muted">
-                        Secondary text
-                      </small>
-                    </h1>
-                    <h2>
-                      h2. Heading
-                      <small class="text-muted">
-                        Secondary text
-                      </small>
-                    </h2>
-                    <h3>
-                      h3. Heading
-                      <small class="text-muted">
-                        Secondary text
-                      </small>
-                    </h3>
-                    <h4>
-                      h4. Heading
-                      <small class="text-muted">
-                        Secondary text
-                      </small>
-                    </h4>
-                    <h5>
-                      h5. Heading
-                      <small class="text-muted">
-                        Secondary text
-                      </small>
-                    </h5>
-                    <h6>
-                      h6. Heading
-                      <small class="text-muted">
-                        Secondary text
-                      </small>
-                    </h6>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Display headings</h4>
-                  <p class="card-description">
-                    Add class <code>.display1</code> to <code>.display-4</code>
-                  </p>
-                  <div class="template-demo">
-                    <h1 class="display-1">Display 1</h1>
-                    <h1 class="display-2">Display 2</h1>
-                    <h1 class="display-3">Display 3</h1>
-                    <h1 class="display-4">Display 4</h1>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 d-flex align-items-stretch">
-              <div class="row">
-                <div class="col-md-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title">Paragraph</h4>
-                      <p class="card-description">
-                        Write text in <code>&lt;p&gt;</code> tag
-                      </p>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley not only five centuries,
-                      </p>
+                    <div class="header-table">
+                        <h4 class="card-title">Thêm sản phẩm</h4>
+                        <button class="btn-add" onclick="window.location.href='./products-manager.php'">Thêm</button>
                     </div>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead>
+                      <tr>
+                          <th>Header</th>
+                          <th>Input</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Hình ảnh</td>
+                          <td>
+                            <input type="file" id="img-upload" name="img" accept="image/*">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Mã sản phẩm</td>
+                          <td>
+                            <input type="number" placeholder="Nhập mã" name="id" required="required" class="td-input" type="number" min="1" step="1" value="1">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Tên sản phẩm</td>
+                          <td>
+                            <input type="text" placeholder="Nhập tên" name="name" required="required" class="td-input">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Số lượng</td>
+                          <td>
+                            <input type="number" placeholder="Nhập mã" name="id" required="required" class="td-input" type="number" min="1" step="1" value="1">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Giá</td>
+                          <td>
+                            <input type="number" placeholder="Nhập mã" name="id" required="required" class="td-input" type="number" min="1" step="1" value="1">
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
                   </div>
-                </div>
-                <div class="col-md-12 grid-margin stretch-card">
-                  <div class="card">
-                    <div class="card-body">
-                      <h4 class="card-title">Icon size</h4>
-                      <p class="card-description">
-                        Add class <code>.icon-lg</code>, <code>.icon-md</code>, <code>.icon-sm</code>
-                      </p>
-                      <div class="row">
-                        <div class="col-md-4 d-flex align-items-center">
-                          <div class="d-flex flex-row align-items-center">
-                            <i class="ti-package icon-lg text-warning"></i>
-                            <p class="mb-0 ms-1">
-                              Icon-lg
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-center">
-                          <div class="d-flex flex-row align-items-center">
-                            <i class="ti-package icon-md text-success"></i>
-                            <p class="mb-0 ms-1">
-                              Icon-md
-                            </p>
-                          </div>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-center">
-                          <div class="d-flex flex-row align-items-center">
-                            <i class="ti-package icon-sm text-danger"></i>
-                            <p class="mb-0 ms-1">
-                              Icon-sm
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Blockquotes</h4>
-                  <p class="card-description">
-                    Wrap content inside<code>&lt;blockquote class="blockquote"&gt;</code>
-                  </p>
-                  <blockquote class="blockquote">
-                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                  </blockquote>
-                </div>
-                <div class="card-body">
-                  <blockquote class="blockquote blockquote-primary">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Address</h4>
-                  <p class="card-description">
-                    Use <code>&lt;address&gt;</code> tag
-                  </p>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <address>
-                        <p class="fw-bold">Star Admin2  inc.</p>
-                        <p>
-                          695 lsom Ave,
-                        </p>
-                        <p>
-                           Suite 00
-                        </p>
-                        <p>
-                          San Francisco, CA 94107
-                        </p>
-                      </address>
-                    </div>
-                    <div class="col-md-6">
-                      <address class="text-primary">
-                        <p class="fw-bold">
-                          E-mail
-                        </p>
-                        <p class="mb-2">
-                          johndoe@examplemeail.com
-                        </p>
-                        <p class="fw-bold">
-                          Web Address
-                        </p>
-                        <p>
-                          www.starAdminPro.com
-                        </p>
-                      </address>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title">Lead</h4>
-                  <p class="card-description">
-                    Use class <code>.lead</code>
-                  </p>
-                  <p class="lead">
-                      Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-12 grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Text colors</h4>
-                  <p class="card-description">
-                    Use class <code>.text-primary</code>, <code>.text-secondary</code> etc. for text in theme colors
-                  </p>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <p class="text-primary">.text-primary</p>
-                      <p class="text-success">.text-success</p>
-                      <p class="text-danger">.text-danger</p>
-                      <p class="text-warning">.text-warning</p>
-                      <p class="text-info">.text-info</p>
-                    </div>
-                    <div class="col-md-6">
-                      <p class="text-light bg-dark pl-1">.text-light</p>
-                      <p class="text-secondary">.text-secondary</p>
-                      <p class="text-dark">.text-dark</p>
-                      <p class="text-muted">.text-muted</p>
-                      <p class="text-white bg-dark pl-1">.text-white</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Top aligned media</h4>
-                  <div class="media">
-                    <i class="ti-world icon-md text-info d-flex align-self-start me-3"></i>
-                    <div class="media-body">
-                      <p class="card-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Center aligned media</h4>
-                  <div class="media">
-                    <i class="ti-world icon-md text-info d-flex align-self-center me-3"></i>
-                    <div class="media-body">
-                      <p class="card-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Bottom aligned media</h4>
-                  <div class="media">
-                    <i class="ti-world icon-md text-info d-flex align-self-end me-3"></i>
-                    <div class="media-body">
-                      <p class="card-text">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Highlighted Text</h4>
-                  <p class="card-description">
-                    Wrap the text in <code>&lt;mark&gt;</code> to highlight text
-                  </p>
-                  <p>
-                    It is a long <mark class="bg-warning text-white">established</mark> fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">List Unordered</h4>
-                  <ul>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Consectetur adipiscing elit</li>
-                    <li>Integer molestie lorem at massa</li>
-                    <li>Facilisis in pretium nisl aliquet</li>
-                    <li>Nulla volutpat aliquam velit</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Bold text</h4>
-                  <p class="card-description">
-                    Use class<code>.fw-bold</code>
-                  </p>
-                  <p>
-                    It is a long <span class="fw-bold">established fact</span> that a reader will be distracted by the readable content
-                    of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                    more-or-less normal distribution
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">List Ordered</h4>
-                  <ol>
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Consectetur adipiscing elit</li>
-                    <li>Integer molestie lorem at massa</li>
-                    <li>Facilisis in pretium nisl aliquet</li>
-                    <li>Nulla volutpat aliquam velit></li>
-                  </ol>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title text-primary">Underline</h4>
-                  <p class="card-description">
-                    Wrap in <code>&lt;u&gt;</code> tag for underline
-                  </p>
-                  <p>
-                    <u>lorem ipsum dolor sit amet, consectetur
-                      mod tempor incididunt ut labore et dolore
-                      magna aliqua.</u>
-                  </p>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title text-danger">Lowercase</h4>
-                  <p class="card-description">
-                    Use class <code>.text-lowercase</code>
-                  </p>
-                  <p class="text-lowercase">
-                    lorem ipsum dolor sit amet, consectetur
-                      mod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                  </p>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title text-warning">Uppercase</h4>
-                  <p class="card-description">
-                    Use class <code>.text-uppercase</code>
-                  </p>
-                  <p class="text-uppercase">
-                    lorem ipsum dolor sit amet, consectetur
-                      mod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Mute</h4>
-                  <p class="card-description">
-                    Use class <code>.text-muted</code>
-                  </p>
-                  <p class="text-muted">
-                    lorem ipsum dolor sit amet, consectetur
-                      mod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                  </p>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title text-success">Strike</h4>
-                  <p class="card-description">
-                    Wrap content in <code>&lt;del&gt;</code> tag
-                  </p>
-                  <p>
-                    <del>
-                      lorem ipsum dolor sit amet, consectetur
-                      mod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                    </del>
-                  </p>
-                </div>
-                <div class="card-body">
-                  <h4 class="card-title text-info">Capitalized</h4>
-                  <p class="card-description">
-                    Use class <code>.text-capitalize</code>
-                  </p>
-                  <p class="text-capitalize">
-                    lorem ipsum dolor sit amet, consectetur
-                      mod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 grid-margin grid-margin-md-0 stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">List with icon</h4>
-                  <p class="card-description">Add class <code>.list-ticked</code> to <code>&lt;ul&gt;</code></p>
-                  <ul class="list-ticked">
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Consectetur adipiscing elit</li>
-                    <li>Integer molestie lorem at massa</li>
-                    <li>Facilisis in pretium nisl aliquet</li>
-                    <li>Nulla volutpat aliquam velit></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 grid-margin grid-margin-md-0 stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">List with icon</h4>
-                  <p class="card-description">Add class <code>.list-arrow</code> to <code>&lt;ul&gt;</code></p>
-                  <ul class="list-arrow">
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Consectetur adipiscing elit</li>
-                    <li>Integer molestie lorem at massa</li>
-                    <li>Facilisis in pretium nisl aliquet</li>
-                    <li>Nulla volutpat aliquam velit></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 grid-margin grid-margin-md-0 stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">List with icon</h4>
-                  <p class="card-description">Add class <code>.list-star</code> to <code>&lt;ul&gt;</code></p>
-                  <ul class="list-star">
-                    <li>Lorem ipsum dolor sit amet</li>
-                    <li>Consectetur adipiscing elit</li>
-                    <li>Integer molestie lorem at massa</li>
-                    <li>Facilisis in pretium nisl aliquet</li>
-                    <li>Nulla volutpat aliquam velit></li>
-                  </ul>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <!-- content-wrapper ends -->
-        <!-- partial:../../partials/_footer.html -->
+        <!-- partial:../../partials/_footer.php -->
         <footer class="footer">
           <div class="d-sm-flex justify-content-center justify-content-sm-between">
             <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
@@ -934,20 +558,23 @@
   </div>
   <!-- container-scroller -->
   <!-- plugins:js -->
-  <script src="../../vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../../vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
-  <script src="../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+  <script src="../../../vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
   <!-- End plugin js for this page -->
   <!-- inject:js -->
-  <script src="../../js/off-canvas.js"></script>
-  <script src="../../js/hoverable-collapse.js"></script>
-  <script src="../../js/template.js"></script>
-  <script src="../../js/settings.js"></script>
-  <script src="../../js/todolist.js"></script>
+  <script src="../../../js/off-canvas.js"></script>
+  <script src="../../../js/hoverable-collapse.js"></script>
+  <script src="../../../js/template.js"></script>
+  <script src="../../../js/settings.js"></script>
+  <script src="../../../js/todolist.js"></script>
   <!-- endinject -->
   <!-- Custom js for this page-->
   <!-- End custom js for this page-->
+  <script>
+      
+  </script>
 </body>
 
 </html>

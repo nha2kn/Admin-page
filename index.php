@@ -25,7 +25,7 @@
 </head>
 <body>
   <div class="container-scroller"> 
-    <!-- partial:partials/_navbar.html -->
+    <!-- partial:partials/_navbar.php -->
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
         <div class="me-3">
@@ -34,10 +34,10 @@
           </button>
         </div>
         <div>
-          <a class="navbar-brand brand-logo" href="index.html">
+          <a class="navbar-brand brand-logo" href="index.php">
             <img src="images/logo.svg" alt="logo" />
           </a>
-          <a class="navbar-brand brand-logo-mini" href="index.html">
+          <a class="navbar-brand brand-logo-mini" href="index.php">
             <img src="images/logo-mini.svg" alt="logo" />
           </a>
         </div>
@@ -199,7 +199,7 @@
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:partials/_settings-panel.html -->
+      <!-- partial:partials/_settings-panel.php -->
       <div class="theme-setting-wrapper">
         <div id="settings-trigger"><i class="ti-settings"></i></div>
         <div id="theme-settings" class="settings-panel">
@@ -369,11 +369,11 @@
         </div>
       </div>
       <!-- partial -->
-      <!-- partial:partials/_sidebar.html -->
+      <!-- partial:partials/_sidebar.php -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="index.php">
               <i class="mdi mdi-grid-large menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
@@ -387,9 +387,9 @@
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.html">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Typography</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.php">Buttons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.php">Dropdowns</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.php">Typography</a></li>
               </ul>
             </div>
           </li>
@@ -402,7 +402,7 @@
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.html">Basic Elements</a></li>
+                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.php">Basic Elements</a></li>
               </ul>
             </div>
           </li>
@@ -414,7 +414,7 @@
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.php">ChartJs</a></li>
               </ul>
             </div>
           </li>
@@ -426,7 +426,7 @@
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.html">Basic table</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.php">Basic table</a></li>
               </ul>
             </div>
           </li>
@@ -438,7 +438,7 @@
             </a>
             <div class="collapse" id="icons">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.php">Mdi icons</a></li>
               </ul>
             </div>
           </li>
@@ -451,15 +451,34 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
+                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.php"> Login </a></li>
               </ul>
             </div>
           </li>
           <li class="nav-item nav-category">help</li>
           <li class="nav-item">
-            <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.html">
+            <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.php">
               <i class="menu-icon mdi mdi-file-document"></i>
               <span class="menu-title">Documentation</span>
+            </a>
+          </li>
+          <li class="nav-item nav-category">Quản lý</li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/manager/categories/categories-manager.php">
+              <i class="menu-icon mdi mdi-file-document"></i>
+              <span class="menu-title">Quản lý danh mục</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/manager/posts/posts-manager.php">
+              <i class="menu-icon mdi mdi-file-document"></i>
+              <span class="menu-title">Quản lý bài viết</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/manager/products/products-manager.php">
+              <i class="menu-icon mdi mdi-file-document"></i>
+              <span class="menu-title">Quản lý sản phẩm</span>
             </a>
           </li>
         </ul>
@@ -1191,7 +1210,7 @@
           </div>
         </div>
         <!-- content-wrapper ends -->
-        <!-- partial:partials/_footer.html -->
+        <!-- partial:partials/_footer.php -->
         <footer class="footer">
           <div class="d-sm-flex justify-content-center justify-content-sm-between">
             <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
