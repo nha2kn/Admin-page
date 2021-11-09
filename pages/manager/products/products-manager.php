@@ -9,8 +9,8 @@
             <div class="card">
               <div class="card-body">
                 <div class="header-table">
-                  <h4 class="card-title">Quản lý sản phẩm</h4>
-                  <button href="./category-add.php" class="btn-add" onclick="window.location.href='./product-add.php'">Thêm sản phẩm</button>
+                  <h4 class="card-title">Quản lý đơn hàng</h4>
+                  <button href="./category-add.php" class="btn-add" onclick="window.location.href='./product-add.php'">Thêm đơn hàng</button>
                 </div>
                 <div class="table-responsive">
                   <table class="table table-striped">
@@ -20,10 +20,10 @@
                           Hình ảnh
                         </th>
                         <th>
-                          Mã sản phẩm
+                          Mã đơn hàng
                         </th>
                         <th>
-                          Tên sản phẩm
+                          Tên đơn hàng
                         </th>
                         <th>
                           Số lượng
@@ -36,6 +36,9 @@
                         </th>
                         <th>
                           Xóa
+                        </th>
+                        <th>
+                          Xem
                         </th>
                       </tr>
                     </thead>
@@ -63,6 +66,11 @@
                                         <i class="mdi mdi-delete-forever"></i>
                                     </a>
                                   </td>
+                                  <td>
+                                  <a href="./prod-info.php" class="edit-icon">
+                                      <i class="mdi mdi-account-search"></i>
+                                  </a>
+                                </td>
                                 ';
                         echo "</tr>";
                       }

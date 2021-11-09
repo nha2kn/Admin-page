@@ -16,7 +16,7 @@
           <li class="nav-item">
             <a class="nav-link" href="../products/products-manager.php">
               <i class="menu-icon mdi mdi-file-document"></i>
-              <span class="menu-title">Quản lý sản phẩm</span>
+              <span class="menu-title">Quản lý đơn hàng</span>
             </a>
           </li>
         </ul>

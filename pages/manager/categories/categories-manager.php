@@ -21,6 +21,7 @@
                         <th>Số lượng</th>
                         <th>Sửa</th>
                         <th>Xóa</th>
+                        <th>Xem</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -39,6 +40,11 @@
                                 <td>
                                   <a href="#" class="edit-icon">
                                       <i class="mdi mdi-delete-forever"></i>
+                                  </a>
+                                </td>
+                                <td>
+                                  <a href="./cate-info.php" class="edit-icon">
+                                      <i class="mdi mdi-account-search"></i>
                                   </a>
                                 </td>
                               ';
