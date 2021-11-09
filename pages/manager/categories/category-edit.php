@@ -24,7 +24,7 @@
                         <tr>
                           <td>Danh mục</td>
                           <td>
-                          <input type="text" placeholder="Nhập tên" name="name" required="required" class="td-input">
+                            <input type="text" placeholder="Nhập tên" name="name" required="required" class="td-input" >
                           </td>
                         </tr>
                         <tr>

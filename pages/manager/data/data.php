@@ -11,24 +11,31 @@ $dataCategory = [
 ];
 
 $dataPost = [
-    1 => [
+    [
         "image" => "../img/product-img/nike-air-force-1-6-1.jpg",
         "id" => 1,
-        "name" => "Nike Air Force 1 Shadow All White New",
+        "name" => "Review Từ A – Z về giày Nike Air Force 1",
     ],
-    2 => [
-        "image" => "../img/product-img/nike-air-force-1-6-1.jpg",
+    [
+        "image" => "../img/product-img/nike-97.jpg",
         "id" => 2,
-        "name" => "Nike Air Force 1 Shadow All White New",
+        "name" => "GIÀY NIKE AIR MAX 97 CHIẾM LĨNH THỊ TRƯỜNG VIỆT NHƯ THẾ NÀO?",
     ],
 ];
 
 $dataProduct = [
-    1 => [
+    [
         "image" => "../img/product-img/nike-air-force-1-6-1.jpg",
         "id" => 1,
         "name" => "Nike Air Force 1 Shadow All White New",
         "quantity" => 3,
         "price" => 100,
+    ],
+    [
+        "image" => "../img/product-img/nike-97.jpg",
+        "id" => 1,
+        "name" => "NIKE AIR MAX 97",
+        "quantity" => 1,
+        "price" => 200,
     ],
 ];
