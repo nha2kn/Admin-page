@@ -23,8 +23,10 @@
   <!-- endinject -->
   <link rel="shortcut icon" href="images/favicon.png" />
 </head>
+
 <body>
-  <div class="container-scroller"> 
+  <?php header("Location: ./pages/manager/categories/categories-manager.php"); exit; ?>
+  <div class="container-scroller">
     <!-- partial:partials/_navbar.php -->
     <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex align-items-top flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
@@ -42,7 +44,7 @@
           </a>
         </div>
       </div>
-      <div class="navbar-menu-wrapper d-flex align-items-top"> 
+      <div class="navbar-menu-wrapper d-flex align-items-top">
         <ul class="navbar-nav">
           <li class="nav-item font-weight-semibold d-none d-lg-block ms-0">
             <h1 class="welcome-text">Good Morning, <span class="text-black fw-bold">John Doe</span></h1>
@@ -53,7 +55,7 @@
           <li class="nav-item dropdown d-none d-lg-block">
             <a class="nav-link dropdown-bordered dropdown-toggle dropdown-toggle-split" id="messageDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false"> Select Category </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" aria-labelledby="messageDropdown">
-              <a class="dropdown-item py-3" >
+              <a class="dropdown-item py-3">
                 <p class="mb-0 font-weight-medium float-left">Select category</p>
               </a>
               <div class="dropdown-divider"></div>
@@ -135,7 +137,7 @@
               </a>
             </div>
           </li>
-          <li class="nav-item dropdown"> 
+          <li class="nav-item dropdown">
             <a class="nav-link count-indicator" id="countDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
               <i class="icon-bell"></i>
               <span class="count"></span>
@@ -205,8 +207,12 @@
         <div id="theme-settings" class="settings-panel">
           <i class="settings-close ti-close"></i>
           <p class="settings-heading">SIDEBAR SKINS</p>
-          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border me-3"></div>Light</div>
-          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border me-3"></div>Dark</div>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme">
+            <div class="img-ss rounded-circle bg-light border me-3"></div>Light
+          </div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme">
+            <div class="img-ss rounded-circle bg-dark border me-3"></div>Dark
+          </div>
           <p class="settings-heading mt-2">HEADER SKINS</p>
           <div class="color-tiles mx-0 px-4">
             <div class="tiles success"></div>
@@ -372,96 +378,6 @@
       <!-- partial:partials/_sidebar.php -->
       <nav class="sidebar sidebar-offcanvas" id="sidebar">
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.php">
-              <i class="mdi mdi-grid-large menu-icon"></i>
-              <span class="menu-title">Dashboard</span>
-            </a>
-          </li>
-          <li class="nav-item nav-category">UI Elements</li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="menu-icon mdi mdi-floor-plan"></i>
-              <span class="menu-title">UI Elements</span>
-              <i class="menu-arrow"></i> 
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.php">Buttons</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/dropdowns.php">Dropdowns</a></li>
-                <li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.php">Typography</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item nav-category">Forms and Datas</li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
-              <i class="menu-icon mdi mdi-card-text-outline"></i>
-              <span class="menu-title">Form elements</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="form-elements">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"><a class="nav-link" href="pages/forms/basic_elements.php">Basic Elements</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
-              <i class="menu-icon mdi mdi-chart-line"></i>
-              <span class="menu-title">Charts</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="charts">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.php">ChartJs</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
-              <i class="menu-icon mdi mdi-table"></i>
-              <span class="menu-title">Tables</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="tables">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/tables/basic-table.php">Basic table</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
-              <i class="menu-icon mdi mdi-layers-outline"></i>
-              <span class="menu-title">Icons</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="icons">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/icons/mdi.php">Mdi icons</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item nav-category">pages</li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-              <i class="menu-icon mdi mdi-account-circle-outline"></i>
-              <span class="menu-title">User Pages</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="auth">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="pages/samples/login.php"> Login </a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item nav-category">help</li>
-          <li class="nav-item">
-            <a class="nav-link" href="http://bootstrapdash.com/demo/star-admin2-free/docs/documentation.php">
-              <i class="menu-icon mdi mdi-file-document"></i>
-              <span class="menu-title">Documentation</span>
-            </a>
-          </li>
           <li class="nav-item nav-category">Quản lý</li>
           <li class="nav-item">
             <a class="nav-link" href="./pages/manager/categories/categories-manager.php">
@@ -513,7 +429,7 @@
                   </div>
                 </div>
                 <div class="tab-content tab-content-basic">
-                  <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview"> 
+                  <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview">
                     <div class="row">
                       <div class="col-sm-12">
                         <div class="statistics-details d-flex align-items-center justify-content-between">
@@ -549,7 +465,7 @@
                           </div>
                         </div>
                       </div>
-                    </div> 
+                    </div>
                     <div class="row">
                       <div class="col-lg-8 d-flex flex-column">
                         <div class="row flex-grow">
@@ -558,8 +474,8 @@
                               <div class="card-body">
                                 <div class="d-sm-flex justify-content-between align-items-start">
                                   <div>
-                                   <h4 class="card-title card-title-dash">Performance Line Chart</h4>
-                                   <h5 class="card-subtitle card-subtitle-dash">Lorem Ipsum is simply dummy text of the printing</h5>
+                                    <h4 class="card-title card-title-dash">Performance Line Chart</h4>
+                                    <h5 class="card-subtitle card-subtitle-dash">Lorem Ipsum is simply dummy text of the printing</h5>
                                   </div>
                                   <div id="performance-line-legend"></div>
                                 </div>
@@ -633,7 +549,7 @@
                                 <div class="d-sm-flex justify-content-between align-items-start">
                                   <div>
                                     <h4 class="card-title card-title-dash">Market Overview</h4>
-                                   <p class="card-subtitle card-subtitle-dash">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                                    <p class="card-subtitle card-subtitle-dash">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                                   </div>
                                   <div>
                                     <div class="dropdown">
@@ -650,8 +566,14 @@
                                   </div>
                                 </div>
                                 <div class="d-sm-flex align-items-center mt-1 justify-content-between">
-                                  <div class="d-sm-flex align-items-center mt-4 justify-content-between"><h2 class="me-2 fw-bold">$36,2531.00</h2><h4 class="me-2">USD</h4><h4 class="text-success">(+1.37%)</h4></div>
-                                  <div class="me-3"><div id="marketing-overview-legend"></div></div>
+                                  <div class="d-sm-flex align-items-center mt-4 justify-content-between">
+                                    <h2 class="me-2 fw-bold">$36,2531.00</h2>
+                                    <h4 class="me-2">USD</h4>
+                                    <h4 class="text-success">(+1.37%)</h4>
+                                  </div>
+                                  <div class="me-3">
+                                    <div id="marketing-overview-legend"></div>
+                                  </div>
                                 </div>
                                 <div class="chartjs-bar-wrapper mt-3">
                                   <canvas id="marketingOverview"></canvas>
@@ -681,7 +603,7 @@
                                 <div class="d-sm-flex justify-content-between align-items-start">
                                   <div>
                                     <h4 class="card-title card-title-dash">Pending Requests</h4>
-                                   <p class="card-subtitle card-subtitle-dash">You have 50+ new requests</p>
+                                    <p class="card-subtitle card-subtitle-dash">You have 50+ new requests</p>
                                   </div>
                                   <div>
                                     <button class="btn btn-primary btn-lg text-white mb-0 me-0" type="button"><i class="mdi mdi-account-plus"></i>Add new member</button>
@@ -708,7 +630,7 @@
                                         <td>
                                           <div class="form-check form-check-flat mt-0">
                                             <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                              <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
                                           </div>
                                         </td>
                                         <td>
@@ -735,13 +657,15 @@
                                             </div>
                                           </div>
                                         </td>
-                                        <td><div class="badge badge-opacity-warning">In progress</div></td>
+                                        <td>
+                                          <div class="badge badge-opacity-warning">In progress</div>
+                                        </td>
                                       </tr>
                                       <tr>
                                         <td>
                                           <div class="form-check form-check-flat mt-0">
                                             <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                              <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
                                           </div>
                                         </td>
                                         <td>
@@ -768,13 +692,15 @@
                                             </div>
                                           </div>
                                         </td>
-                                        <td><div class="badge badge-opacity-warning">In progress</div></td>
+                                        <td>
+                                          <div class="badge badge-opacity-warning">In progress</div>
+                                        </td>
                                       </tr>
                                       <tr>
                                         <td>
                                           <div class="form-check form-check-flat mt-0">
                                             <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                              <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
                                           </div>
                                         </td>
                                         <td>
@@ -801,13 +727,15 @@
                                             </div>
                                           </div>
                                         </td>
-                                        <td><div class="badge badge-opacity-warning">In progress</div></td>
+                                        <td>
+                                          <div class="badge badge-opacity-warning">In progress</div>
+                                        </td>
                                       </tr>
                                       <tr>
                                         <td>
                                           <div class="form-check form-check-flat mt-0">
                                             <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                              <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
                                           </div>
                                         </td>
                                         <td>
@@ -834,13 +762,15 @@
                                             </div>
                                           </div>
                                         </td>
-                                        <td><div class="badge badge-opacity-danger">Pending</div></td>
+                                        <td>
+                                          <div class="badge badge-opacity-danger">Pending</div>
+                                        </td>
                                       </tr>
                                       <tr>
                                         <td>
                                           <div class="form-check form-check-flat mt-0">
                                             <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
+                                              <input type="checkbox" class="form-check-input" aria-checked="false"><i class="input-helper"></i></label>
                                           </div>
                                         </td>
                                         <td>
@@ -867,7 +797,9 @@
                                             </div>
                                           </div>
                                         </td>
-                                        <td><div class="badge badge-opacity-success">Completed</div></td>
+                                        <td>
+                                          <div class="badge badge-opacity-success">Completed</div>
+                                        </td>
                                       </tr>
                                     </tbody>
                                   </table>
@@ -933,7 +865,7 @@
                                     </div>
                                   </div>
                                 </div>
-                                
+
                                 <div class="list align-items-center pt-3">
                                   <div class="wrapper w-100">
                                     <p class="mb-0">
@@ -1211,12 +1143,7 @@
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.php -->
-        <footer class="footer">
-          <div class="d-sm-flex justify-content-center justify-content-sm-between">
-            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
-            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
-          </div>
-        </footer>
+        <?php include "./pages/layout/footer.php" ?>
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
@@ -1248,4 +1175,3 @@
 </body>
 
 </html>
-
