@@ -15240,7 +15240,11 @@ fieldset:disabled .swal2-modal .swal2-buttonswrapper .swal2-styled,
     z-index: 1020;
   }
 }
-
+.img-preview{
+  width: 300px;
+  border-radius: 16px;
+ 
+}
 .visually-hidden,
 .visually-hidden-focusable:not(:focus):not(:focus-within) {
   position: absolute !important;
