@@ -1,7 +1,10 @@
 
   <?php include "../layout/navbar.php"; ?>
   <?php include "../layout/sidebar.php"; ?>
-  <?php include '../data/data.php'; ?>  
+  <?php include '../data/data.php'; ?>
+  <!-- <?php include "../data/session.php";
+    $categories = getCategories();
+  ?>   -->
     <!-- partial -->
     <div class="main-panel">
       <div class="content-wrapper">
@@ -51,6 +54,31 @@
                         echo "</tr>";
                       }
                       ?>
+                      <!-- <?php foreach ($categories as $item) { ?>
+                        <tr>
+                          <td>
+                            <?php echo $item["category_id"]; ?>
+                          </td>
+                          <td>
+                          <?php echo $item["category_quantity"]; ?>
+                          </td>
+                          <td>
+                            <a href="./category-edit.php?id=<?php echo $item["category_id"]; ?>" class="edit-icon">
+                                <i class="mdi mdi-tooltip-edit"></i>
+                            </a>
+                          </td>
+                          <td>
+                              <a href="#" class="edit-icon">
+                                  <i class="mdi mdi-delete-forever"></i>
+                              </a>
+                          </td>
+                          <td>
+                          <a href="./cate-info.php" class="edit-icon">
+                                      <i class="mdi mdi-account-search"></i>
+                                  </a>
+                          </td>
+                        </tr>
+                        <?php } ?> -->
                     </tbody>
                   </table>
                 </div>

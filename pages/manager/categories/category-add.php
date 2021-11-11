@@ -10,7 +10,7 @@
                 <div class="card-body">
                     <div class="header-table">
                         <h4 class="card-title">Thêm danh mục</h4>
-                        <form action="./handleAddCategory.php" method="post">
+                        <form action="./categories-manager.php" method="post">
                         <button type="submit" class="btn-add">Thêm</button>
                     </div>
                   <div class="table-responsive">

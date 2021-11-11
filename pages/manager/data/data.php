@@ -33,7 +33,7 @@ $dataProduct = [
     ],
     [
         "image" => "../img/product-img/nike-97.jpg",
-        "id" => 1,
+        "id" => 2,
         "name" => "NIKE AIR MAX 97",
         "quantity" => 1,
         "price" => 200,
